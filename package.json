@@ -1,0 +1,16 @@
+{
+  "name": "session2bookmarks",
+  "version": "1.0.0",
+  "description": "Transforming JSON session logs into HTML for bookmark import",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jcleftie / Jamie Webb",
+  "license": "MIT",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.21.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}

@@ -1,0 +1,189 @@
+/***************************************************/
+/*               Bookmark Converter                */
+/*              sessions2bookmarks                 */
+/*              stylesheet.css                     */
+/*               Version 1.0.1                     */
+/***************************************************/
+
+/***************************************************/
+/*                 Base Variables                  */
+/***************************************************/
+
+:root {
+    --bg-color: #00072d;
+    --text-color: #d4c0c9;
+    --text-color2: #DED9E3;
+    --primary-color: #330939;
+    --secondary-color: #48324c;
+    --footer-color: #330939;
+    --footer-text-color: #DED9E3;
+    --lead-text-color: #B6AAB8;
+    /* Added for hero section lead text */
+    --muted-text-color: #6c757d;
+    --navbar-footer-bg-color: #29274c;
+    --bs-tertiary-bg: #D4C0C9;
+}
+
+/***************************************************/
+/*               Global and Common Styles          */
+/***************************************************/
+
+/* General body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lobster', cursive;
+}
+
+/* Hero Section */
+.hero-section,
+.card {
+    background-color: var(--bg-color);
+    color: var(--text-color2);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-success {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
+}
+
+
+
+/* Overriding text-muted for specific elements */
+.text-muted {
+    color: var(--muted-text-color) !important;
+}
+
+.hero-section p.lead {
+    --bs-text-opacity: 1;
+    color: var(--lead-text-color) !important;
+}
+
+/***************************************************/
+/*       Navbar and Footer Customizations          */
+/***************************************************/
+
+.navbar,
+footer {
+    background-color: var(--navbar-footer-bg-color) !important;
+    color: #cccccc;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer h5 {
+    color: #f8f9fa;
+    font-family: 'Lobster', cursive;
+}
+
+footer a {
+    color: #dcdcdc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer p {
+    color: #b0b0b0;
+}
+
+footer .img-fluid {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+footer .img-fluid:hover {
+    filter: grayscale(0%);
+}
+
+/* Align the columns in footer */
+.col-12.col-md-4.text-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/***************************************************/
+/*       Media Queries and Mobile Layouts          */
+/***************************************************/
+
+@media (min-width: 992px) {
+    .theme-dropdown {
+        display: block !important;
+    }
+
+    .navbar-toggler {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .theme-dropdown {
+        display: none !important;
+    }
+
+    .navbar-toggler {
+        display: block !important;
+    }
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .logo {
+        max-width: 250px !important;
+    }
+}
+
+/***************************************************/
+/*       Critical Overrides - Applied Last         */
+/***************************************************/
+
+/* General layout and structure */
+main {
+    flex: 1;
+}
+
+.bg-dark {
+    background-color: var(--navbar-footer-bg-color);
+}
+
+.text-light {
+    color: var(--text-color);
+}
+
+#deleteButton {
+    display: none;
+}
